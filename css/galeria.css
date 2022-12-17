@@ -1,0 +1,77 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+section#galeria{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 299px;
+	background: ghostwhite;
+}
+
+section#galeria ul#cajaGaleria{
+	position: relative;
+	width: 935px;
+	margin: auto;
+	top: 18px;
+	height: 262px;
+	background: antiquewhite;
+	box-shadow: 0px 0px 20px #222;
+}
+
+section#galeria ul#cajaGaleria li div{
+	position: absolute;
+	opacity: 0;
+	right: 20px;
+	top: 22px;
+	transition: all .2s ease-out;
+}
+
+section#galeria ul#cajaGaleria li div#galeria00{
+	opacity: 1;
+}
+
+section#galeria ul#cajaGaleria li div h1{
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	left: 20px;
+	color: darkviolet;
+	font-weight: 200;
+}
+
+section#galeria ul#cajaGaleria li div p{
+	position: absolute;
+	z-index: 1;
+	bottom: 4px;
+	background: rgba(0, 0, 0, 0.5);
+	padding-left: 20px;
+	line-height: 60px;
+	width: 97.2%;
+	color: ghostwhite;
+}
+
+section#galeria ul#cajaGaleria li input{
+	display: none;
+}
+
+section#galeria ul#cajaGaleria li label{
+	position: relative;
+	z-index: 3;
+	width: 151px;
+	height: 72px;
+	top: 22px;
+	left: 15px;
+	margin: 2px 0px;
+	cursor: pointer;
+}
+
+input#btn01:checked ~ #galeria01,input#btn02:checked ~ #galeria02,input#btn03:checked ~ #galeria03{
+	opacity: 1;
+	z-index: 1;
+}

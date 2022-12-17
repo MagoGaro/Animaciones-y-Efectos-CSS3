@@ -1,0 +1,64 @@
+/* Resetear estilos */
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+header{
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 150px;
+	background-color: silver;
+}
+#menuTop{
+	position: absolute;
+	bottom: 0;
+	width: 1000px;
+	height: 50px;
+	background-color: darkred;
+}
+.nivel1{
+	float: left;
+	width: 19.2%;
+	text-align: center;
+	line-height: 50px;
+	border: 4px solid white;
+	background: linear-gradient(45deg, rgba(222,253,29,1) 50%, rgba(252,136,69,1) 100%);
+}
+
+.nivel1 a{
+	color: #000;
+}
+
+.nivel1:hover{
+	background: linear-gradient(45deg, rgba(252,136,69,1) 50%, rgba(222,253,29,1) 100%);
+	transition: all .5s ease-out;
+}
+
+.nivel2{
+	position: relative;
+	width: 100%;
+	left: -4px;
+	text-align: center;
+	line-height: 42px;
+	border: 4px solid #fff;
+	border-bottom: 0px;
+	background: silver;
+}
+
+.nivel2:hover{
+	background: darkblue;
+	color: white;
+	transition: all .5s ease-out;
+}
+
+#menuTop ul li ul{
+	display: none;
+}
+#menuTop ul li:hover ul{
+	display: block;
+}

@@ -1,0 +1,44 @@
+/* Resetear margen y paddding  */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Colocando Fondos  */
+
+#fondo1, #fondo2, #fondo3, #fondo4{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/background.jpg');
+}
+#fondo1{
+	animation: slideFondo 24s linear 18s infinite;
+}
+#fondo2{
+	background-image: url('../img/background2.jpg');
+	background-size: cover;
+	animation: slideFondo 24s linear 12s infinite;
+}
+#fondo3{
+	background-image: url('../img/background4.jpg');
+	animation: slideFondo 24s linear 6s infinite;
+}
+#fondo4{
+	background-image: url('../img/background3.jpg');
+	background-size: cover;
+	animation: slideFondo 24s linear 0s infinite;
+}
+
+/* Creando animacion del fondo  */
+
+@keyframes slideFondo{
+	0%, 20%, 100%{
+		opacity: 1;
+	}
+	30%, 90%{
+		opacity: 0;
+	}
+	
+}

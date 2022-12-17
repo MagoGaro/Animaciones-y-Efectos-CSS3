@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+
+#slide{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 300px;
+}
+#slide ul{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 301px;
+	background: url('../img/slide01.jpg');
+}
+
+#slide ul li img{
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	transition: opacity 1s ease-out;
+}
+
+#slide ul li label{
+	position: relative;
+	z-index: 3;
+	width: 8px;
+	top: 302px;
+	left: 440px;
+	float: left;
+	height: 10px;
+	margin: 0px 2px;
+	background-color: darkblue;
+	border: 3px solid black;
+	cursor: pointer;
+	border-radius: 100%;
+}
+
+#slide ul li label:hover{
+	background-color: lightcyan;
+}
+#slide ul li label:active{
+	background-color: darkmagenta;
+}
+
+#slide ul li input{
+	display: none;
+}
+
+#slide ul li input#boton-1:checked ~ #foto01,#slide ul li input#boton-2:checked ~ #foto02,#slide ul li input#boton-3:checked ~ #foto03,#slide ul li input#boton-4:checked ~ #foto04,#slide ul li input#boton-5:checked ~ #foto05{
+	opacity: 1;
+}
+
+#slide ul li input#boton-1:checked ~ label,#slide ul li input#boton-2:checked ~ label,#slide ul li input#boton-3:checked ~ label,#slide ul li input#boton-4:checked ~ label,#slide ul li input#boton-5:checked ~ label{
+	background-color: limegreen;
+}
+
+#botoneraSlide{
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 20px;
+	background-image: url('../img/backBotonesSlide.jpg');
+}
+
